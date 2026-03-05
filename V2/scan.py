@@ -179,7 +179,7 @@ def get_z(ix, iy):
 build_z_anchor_table()
 
 
-"""
+
 
 # ================= SCAN ==================
 try:
@@ -219,9 +219,8 @@ try:
         if row < ROWS - 1:
             motor.move_xyz_u(x=X_STEP)
             x_rel += X_STEP
-"""
-try:
-    pass
+
+
 finally:
     camera.stop()
     motor.release()
