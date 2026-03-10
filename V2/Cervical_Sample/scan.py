@@ -18,11 +18,11 @@ COLS = 32
 X_STEP = -0.3
 Y_STEP = -0.3
 
-X_START = -7.0
-Y_START = -13.5
-Z_START = -1.68
+X_START = -12.0
+Y_START = -16.0
+Z_START = -1.60
 
-SAVE_DIR = "/mnt/ssd/LUT_1024/Scan_Output/"
+SAVE_DIR = "/mnt/ssd/LUT_1024/Scan_Output_Cervical/"
 
 ANCHOR_IX = [0, 15.5, 31]
 ANCHOR_IY = [0, 15.5, 31]
@@ -61,8 +61,8 @@ def find_initial_z():
     max_var = 0
     best_z = motor.z
 
-    step = -0.005
-    steps = 30
+    step = -0.05
+    steps = 10
 
     for i in range(steps):
 
@@ -99,7 +99,10 @@ def build_z_anchor_table():
     prev_best = motor.z
 
     for r in range(3):
-        for c in range(3):
+        # Serpentine: reverse column order on odd rows
+        col_range = range(3) if r % 2 == 0 else range(2, -1, -1)
+
+        for c in col_range:
 
             target_x = X_START + ANCHOR_IX[c] * X_STEP
             target_y = Y_START + ANCHOR_IY[r] * Y_STEP
@@ -139,6 +142,13 @@ def build_z_anchor_table():
     dz = Z_ANCHOR[0][0] - motor.z
     motor.move_xyz_u(z=dz)
     motor.z = Z_ANCHOR[0][0]
+
+
+# The traversal pattern now looks like this:
+# ```
+# Row 0 (even):  (0,0) → (0,1) → (0,2)
+# Row 1 (odd):   (1,2) → (1,1) → (1,0)
+# Row 2 (even):  (2,0) → (2,1) → (2,2)
 
 
 # ==========================================================
