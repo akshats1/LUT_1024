@@ -13,6 +13,8 @@ class Motor:
         self.ser = None
 
         #  Absolute software Z (mm)
+        self.x = 0.0
+        self.y = 0.0
         self.z = 0.0
 
         self.connect_serial()
@@ -44,6 +46,8 @@ class Motor:
         self.send_gcode("G28 X Y", wait=True)
         self.send_gcode("G91", wait=True)
         self.z = 0.0   #  Z is now absolute zero
+        self.x = 0.0
+        self.y = 0.0
 
     def move_xyz_u(self, x=0, y=0, z=0, u=0, feedrate_xy=300, feedrate_z=100):
         if x==0 and y==0 and z==0 and u==0:

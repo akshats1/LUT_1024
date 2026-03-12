@@ -56,8 +56,8 @@ class Focus:
             tuple: (best_z, best_image, total_af_time)
         """
         step = 0.01  # 5 micron
-        n_down = 10    # Number of downward steps
-        n_up = 10      # Number of upward steps
+        n_down = 5    # Number of downward steps
+        n_up = 5      # Number of upward steps
     
         current_z = start_z
         best_z = start_z
@@ -136,9 +136,9 @@ class Focus:
         
             # Move UP first
             dz = +step
-            time.sleep(0.15)
+            time.sleep(0.05)
             self.motor.move_xyz_u(z=dz)
-            time.sleep(0.15)
+            time.sleep(0.05)
             current_z += dz
         
             # Capture images

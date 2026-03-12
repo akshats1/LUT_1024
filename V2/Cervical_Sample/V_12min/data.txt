@@ -1,0 +1,102 @@
+
+Testing T1
+[Z MAP] Building 3x3 surface... 0.045micron
+
+2026-03-11 11:16:54,803 | scan | INFO     | MainThread | [Initial Z] Coarse search starting...
+2026-03-11 11:16:58,447 | scan | INFO     | MainThread | [Initial Z] Step 01/15 | Z=-1.7450 | Var=3478.48
+2026-03-11 11:16:59,471 | scan | INFO     | MainThread | [Initial Z] Step 02/15 | Z=-1.7900 | Var=3469.80
+2026-03-11 11:16:59,983 | scan | INFO     | MainThread | [Initial Z] Step 03/15 | Z=-1.8350 | Var=3474.22
+2026-03-11 11:17:00,495 | scan | INFO     | MainThread | [Initial Z] Step 04/15 | Z=-1.8800 | Var=3475.62
+2026-03-11 11:17:01,039 | scan | INFO     | MainThread | [Initial Z] Step 05/15 | Z=-1.9250 | Var=3485.38
+2026-03-11 11:17:01,615 | scan | INFO     | MainThread | [Initial Z] Step 06/15 | Z=-1.9700 | Var=3503.24
+2026-03-11 11:17:02,159 | scan | INFO     | MainThread | [Initial Z] Step 07/15 | Z=-2.0150 | Var=3526.67
+2026-03-11 11:17:02,735 | scan | INFO     | MainThread | [Initial Z] Step 08/15 | Z=-2.0600 | Var=3651.70
+2026-03-11 11:17:03,279 | scan | INFO     | MainThread | [Initial Z] Step 09/15 | Z=-2.1050 | Var=3498.82
+2026-03-11 11:17:03,823 | scan | INFO     | MainThread | [Initial Z] Step 10/15 | Z=-2.1500 | Var=3626.72
+2026-03-11 11:17:04,335 | scan | INFO     | MainThread | [Initial Z] Step 11/15 | Z=-2.1950 | Var=3532.15
+2026-03-11 11:17:04,847 | scan | INFO     | MainThread | [Initial Z] Step 12/15 | Z=-2.2400 | Var=3458.86
+2026-03-11 11:17:05,423 | scan | INFO     | MainThread | [Initial Z] Step 13/15 | Z=-2.2850 | Var=3473.10
+2026-03-11 11:17:05,999 | scan | INFO     | MainThread | [Initial Z] Step 14/15 | Z=-2.3300 | Var=3489.04
+2026-03-11 11:17:06,543 | scan | INFO     | MainThread | [Initial Z] Step 15/15 | Z=-2.3750 | Var=3506.24
+
+
+
+Test T2 0.01 micron
+
+[Z MAP] Building 3x3 surface...
+
+2026-03-11 11:36:16,663 | scan | INFO     | MainThread | [Initial Z] Coarse search starting...
+2026-03-11 11:36:20,304 | scan | INFO     | MainThread | [Initial Z] Step 01/40 | Z=-1.9100 | Var=3480.92
+2026-03-11 11:36:21,327 | scan | INFO     | MainThread | [Initial Z] Step 02/40 | Z=-1.9200 | Var=3497.69
+2026-03-11 11:36:21,839 | scan | INFO     | MainThread | [Initial Z] Step 03/40 | Z=-1.9300 | Var=3500.53
+2026-03-11 11:36:22,351 | scan | INFO     | MainThread | [Initial Z] Step 04/40 | Z=-1.9400 | Var=3507.40
+2026-03-11 11:36:22,863 | scan | INFO     | MainThread | [Initial Z] Step 05/40 | Z=-1.9500 | Var=3511.25
+2026-03-11 11:36:23,375 | scan | INFO     | MainThread | [Initial Z] Step 06/40 | Z=-1.9600 | Var=3515.57
+2026-03-11 11:36:23,887 | scan | INFO     | MainThread | [Initial Z] Step 07/40 | Z=-1.9700 | Var=3519.42
+2026-03-11 11:36:24,399 | scan | INFO     | MainThread | [Initial Z] Step 08/40 | Z=-1.9800 | Var=3500.59
+2026-03-11 11:36:25,423 | scan | INFO     | MainThread | [Initial Z] Step 09/40 | Z=-1.9900 | Var=3507.07
+2026-03-11 11:36:25,935 | scan | INFO     | MainThread | [Initial Z] Step 10/40 | Z=-2.0000 | Var=3511.88
+2026-03-11 11:36:26,447 | scan | INFO     | MainThread | [Initial Z] Step 11/40 | Z=-2.0100 | Var=3493.10
+2026-03-11 11:36:26,959 | scan | INFO     | MainThread | [Initial Z] Step 12/40 | Z=-2.0200 | Var=3500.37
+2026-03-11 11:36:27,471 | scan | INFO     | MainThread | [Initial Z] Step 13/40 | Z=-2.0300 | Var=3486.26
+2026-03-11 11:36:27,984 | scan | INFO     | MainThread | [Initial Z] Step 14/40 | Z=-2.0400 | Var=3485.80
+2026-03-11 11:36:28,496 | scan | INFO     | MainThread | [Initial Z] Step 15/40 | Z=-2.0500 | Var=3516.46
+2026-03-11 11:36:29,007 | scan | INFO     | MainThread | [Initial Z] Step 16/40 | Z=-2.0600 | Var=3632.78
+2026-03-11 11:36:30,031 | scan | INFO     | MainThread | [Initial Z] Step 17/40 | Z=-2.0700 | Var=4060.86
+2026-03-11 11:36:30,543 | scan | INFO     | MainThread | [Initial Z] Step 18/40 | Z=-2.0800 | Var=4059.83
+2026-03-11 11:36:31,055 | scan | INFO     | MainThread | [Initial Z] Step 19/40 | Z=-2.0900 | Var=3597.56
+2026-03-11 11:36:31,567 | scan | INFO     | MainThread | [Initial Z] Step 20/40 | Z=-2.1000 | Var=3436.44
+2026-03-11 11:36:32,591 | scan | INFO     | MainThread | [Initial Z] Step 21/40 | Z=-2.1100 | Var=3397.73
+2026-03-11 11:36:33,103 | scan | INFO     | MainThread | [Initial Z] Step 22/40 | Z=-2.1200 | Var=3393.10
+2026-03-11 11:36:33,615 | scan | INFO     | MainThread | [Initial Z] Step 23/40 | Z=-2.1300 | Var=3396.48
+2026-03-11 11:36:34,127 | scan | INFO     | MainThread | [Initial Z] Step 24/40 | Z=-2.1400 | Var=3422.63
+2026-03-11 11:36:34,639 | scan | INFO     | MainThread | [Initial Z] Step 25/40 | Z=-2.1500 | Var=3521.59
+2026-03-11 11:36:35,663 | scan | INFO     | MainThread | [Initial Z] Step 26/40 | Z=-2.1600 | Var=3869.76
+2026-03-11 11:36:36,175 | scan | INFO     | MainThread | [Initial Z] Step 27/40 | Z=-2.1700 | Var=4611.15
+2026-03-11 11:36:37,199 | scan | INFO     | MainThread | [Initial Z] Step 28/40 | Z=-2.1800 | Var=4000.49
+2026-03-11 11:36:37,711 | scan | INFO     | MainThread | [Initial Z] Step 29/40 | Z=-2.1900 | Var=3556.40
+2026-03-11 11:36:38,223 | scan | INFO     | MainThread | [Initial Z] Step 30/40 | Z=-2.2000 | Var=3451.76
+2026-03-11 11:36:38,735 | scan | INFO     | MainThread | [Initial Z] Step 31/40 | Z=-2.2100 | Var=3418.49
+2026-03-11 11:36:39,759 | scan | INFO     | MainThread | [Initial Z] Step 32/40 | Z=-2.2200 | Var=3423.98
+2026-03-11 11:36:40,271 | scan | INFO     | MainThread | [Initial Z] Step 33/40 | Z=-2.2300 | Var=3414.04
+
+2026-03-11 11:36:29,007 | scan | INFO     | MainThread | [Initial Z] Step 16/40 | Z=-2.0600 | Var=3632.78
+2026-03-11 11:36:30,031 | scan | INFO     | MainThread | [Initial Z] Step 17/40 | Z=-2.0700 | Var=4060.86
+2026-03-11 11:36:30,543 | scan | INFO     | MainThread | [Initial Z] Step 18/40 | Z=-2.0800 | Var=4059.83
+2026-03-11 11:36:31,055 | scan | INFO     | MainThread | [Initial Z] Step 19/40 | Z=-2.0900 | Var=3597.56
+2026-03-11 11:36:31,567 | scan | INFO     | MainThread | [Initial Z] Step 20/40 | Z=-2.1000 | Var=3436.44
+2026-03-11 11:36:32,591 | scan | INFO     | MainThread | [Initial Z] Step 21/40 | Z=-2.1100 | Var=3397.73
+2026-03-11 11:36:33,103 | scan | INFO     | MainThread | [Initial Z] Step 22/40 | Z=-2.1200 | Var=3393.10
+2026-03-11 11:36:33,615 | scan | INFO     | MainThread | [Initial Z] Step 23/40 | Z=-2.1300 | Var=3396.48
+2026-03-11 11:36:34,127 | scan | INFO     | MainThread | [Initial Z] Step 24/40 | Z=-2.1400 | Var=3422.63
+2026-03-11 11:36:34,639 | scan | INFO     | MainThread | [Initial Z] Step 25/40 | Z=-2.1500 | Var=3521.59
+2026-03-11 11:36:35,663 | scan | INFO     | MainThread | [Initial Z] Step 26/40 | Z=-2.1600 | Var=3869.76
+2026-03-11 11:36:36,175 | scan | INFO     | MainThread | [Initial Z] Step 27/40 | Z=-2.1700 | Var=4611.15
+2026-03-11 11:36:37,199 | scan | INFO     | MainThread | [Initial Z] Step 28/40 | Z=-2.1800 | Var=4000.49
+2026-03-11 11:36:37,711 | scan | INFO     | MainThread | [Initial Z] Step 29/40 | Z=-2.1900 | Var=3556.40
+2026-03-11 11:36:38,223 | scan | INFO     | MainThread | [Initial Z] Step 30/40 | Z=-2.2000 | Var=3451.76
+2026-03-11 11:36:38,735 | scan | INFO     | MainThread | [Initial Z] Step 31/40 | Z=-2.2100 | Var=3418.49
+2026-03-11 11:36:39,759 | scan | INFO     | MainThread | [Initial Z] Step 32/40 | Z=-2.2200 | Var=3423.98
+2026-03-11 11:36:40,271 | scan | INFO     | MainThread | [Initial Z] Step 33/40 | Z=-2.2300 | Var=3414.04
+2026-03-11 11:36:40,783 | scan | INFO     | MainThread | [Initial Z] Step 34/40 | Z=-2.2400 | Var=3407.34
+2026-03-11 11:36:41,295 | scan | INFO     | MainThread | [Initial Z] Step 35/40 | Z=-2.2500 | Var=3425.94
+2026-03-11 11:36:42,319 | scan | INFO     | MainThread | [Initial Z] Step 36/40 | Z=-2.2600 | Var=3422.38
+2026-03-11 11:36:42,831 | scan | INFO     | MainThread | [Initial Z] Step 37/40 | Z=-2.2700 | Var=3447.54
+2026-03-11 11:36:43,343 | scan | INFO     | MainThread | [Initial Z] Step 38/40 | Z=-2.2800 | Var=3447.69
+2026-03-11 11:36:43,855 | scan | INFO     | MainThread | [Initial Z] Step 39/40 | Z=-2.2900 | Var=3475.73
+2026-03-11 11:36:44,879 | scan | INFO     | MainThread | [Initial Z] Step 40/40 | Z=-2.3000 | Var=3503.18
+[Z MAP] Anchor (0,0) Z=-2.17000
+[Z MAP] Anchor (0,1) Z=-2.13000
+[Z MAP] Anchor (0,2) Z=-2.09000
+[Z MAP] Anchor (1,2) Z=-2.14000
+[Z MAP] Anchor (1,1) Z=-2.19000
+[Z MAP] Anchor (1,0) Z=-2.22000
+[Z MAP] Anchor (2,0) Z=-2.27000
+[Z MAP] Anchor (2,1) Z=-2.23000
+[Z MAP] Anchor (2,2) Z=-2.20000
+
+Final Z_ANCHOR:
+[-2.17, -2.13, -2.09]
+[-2.22, -2.19, -2.14]
+[-2.27, -2.23, -2.2]
+

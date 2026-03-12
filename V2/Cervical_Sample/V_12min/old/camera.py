@@ -65,7 +65,36 @@ class Camera:
     # -------------------------------------------------
     # FINAL IMAGE (FULL RES + TIMESTAMP)
     # -------------------------------------------------
+    # def capture_fullres_image(self, save_dir):
+    #     with self.lock:
+    #         if not self.running:
+    #             return None
+
+    #         image_array = self.picam2.switch_mode_and_capture_image(
+    #             self.highres_config, "main"
+    #         )
+
+    #         if isinstance(image_array, Image.Image):
+    #             image_array = np.array(image_array)
+
+    #         os.makedirs(save_dir, exist_ok=True)
+
+    #         ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+    #         filename = f"focused_{ts}.tiff"
+    #         save_path = os.path.join(save_dir, filename)
+
+    #         Image.fromarray(image_array).save(save_path, format="TIFF")
+    #         return save_path
+
     def capture_fullres_image(self, save_dir):
+        ts       = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+        filepath = os.path.join(save_dir, f"focused_{ts}.tiff")
+        return self.capture_fullres_image_to(filepath)
+
+    # -------------------------------------------------
+    # FINAL IMAGE — explicit filepath, used by scan loop
+    # -------------------------------------------------
+    def capture_fullres_image_to(self, filepath):
         with self.lock:
             if not self.running:
                 return None
@@ -77,12 +106,6 @@ class Camera:
             if isinstance(image_array, Image.Image):
                 image_array = np.array(image_array)
 
-            os.makedirs(save_dir, exist_ok=True)
-
-            ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
-            filename = f"focused_{ts}.tiff"
-            save_path = os.path.join(save_dir, filename)
-
-            Image.fromarray(image_array).save(save_path, format="TIFF")
-            return save_path
-
+            os.makedirs(os.path.dirname(filepath), exist_ok=True)
+            Image.fromarray(image_array).save(filepath, format="TIFF")
+            return filepath
