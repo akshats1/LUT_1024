@@ -23,7 +23,7 @@ Y_STEP = -0.25
 ## Cervical Slide
 X_START = -12.0
 Y_START = -17.0
-Z_START = -1.90
+Z_START = -1.95
 
 
 # SAVE_DIR = "/mnt/ssd/LUT_1024/Scan_Output_Cervical_Sample/"
@@ -96,7 +96,7 @@ def find_initial_z():
 
         # Move FIRST, then capture
         motor.move_xyz_u(z=step)
-        time.sleep(0.15)
+        time.sleep(0.5)
 
         img  = camera.capture_lowres_for_autofocus()
         gray = focus.preprocess(img)
@@ -301,7 +301,7 @@ try:
             if dz != 0:
                 motor.move_xyz_u(z=dz)
 
-            time.sleep(0.05)
+            time.sleep(0.3)
             # Serpentine index — sequential across the full zigzag path
             if row % 2 == 0:
                 serp_index = row * COLS + col
